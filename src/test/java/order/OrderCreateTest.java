@@ -48,7 +48,6 @@ public class OrderCreateTest {
                 .statusCode(HttpStatus.SC_OK)
                 .body("success", equalTo(true))
                 .body("order.ingredients[0]._id", equalTo(arrayIngredients[0]));
-        String idOrder = response.path("_id");
     }
 
     @Test
